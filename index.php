@@ -5,7 +5,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 use Google\CloudFunctions\FunctionsFramework;
 use Psr\Http\Message\ServerRequestInterface;
 
-FunctionsFramework::http('run', 'run');
+FunctionsFramework::https('run', 'run');
 
 function run(ServerRequestInterface $request): string
 {
